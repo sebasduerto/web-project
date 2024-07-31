@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+}
+
+#titulo {
+  background: black;
+  padding: 10px;
+  color: white;
+}
+
+#tiburon {
+  background: black;
+  width: 35%;
+  left: 950px;
+  top: 8px;
+  position: fixed;
+}
+
+#tibu {
+  width: 300px;
+  margin: 20px 20px 10px 20px;
+}
+
+div p.enlac {
+  margin: 10px 20px 10px 20px;
+  font-size: 20px;
+  border-top: 1px solid white;
+  padding: 20px;
+}
+
+a:link {
+  color: white;
+}
+
+a:hover {
+  color: gray;
+}
+
+a:active {
+  color: gray;
+}
+
+a:focus {
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+#texto {
+  background: none;
+  width: 63%;
+}
