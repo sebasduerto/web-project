@@ -1,54 +1,226 @@
-body {
-  font-family: sans-serif;
+body{
+    background-color: white;
 }
 
-#titulo {
-  background: black;
-  padding: 10px;
-  color: white;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
 }
 
-#tiburon {
-  background: black;
-  width: 35%;
-  left: 950px;
-  top: 8px;
-  position: fixed;
-}
-
-#tibu {
-  width: 300px;
-  margin: 20px 20px 10px 20px;
-}
-
-div p.enlac {
-  margin: 10px 20px 10px 20px;
-  font-size: 20px;
-  border-top: 1px solid white;
-  padding: 20px;
-}
-
-a:link {
-  color: white;
-}
-
-a:hover {
-  color: gray;
-}
-
-a:active {
-  color: gray;
-}
-
-a:focus {
-  color: gray;
+html {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-#texto {
-  background: none;
-  width: 63%;
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #2849A2;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #2849A2;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+    color: #2849A2;
+    border-bottom: 2px solid #2849A2;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 2em;
+    color: #2849A2;
+}
+
+h4 {
+    font-size: 1.25em;
+    margin: 10px;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+#charac {
+    font-size: 1.25em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#hero {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    padding: 2em;
+    flex-direction: column;
+    color: white;
+    height: 50vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://th.bing.com/th/id/R.e751c9a48d3b483bb6ae9ae18b90a8ff?rik=IfKiH%2b%2bpDkIYZQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-iOk-8y8fCVM%2fUZ3K3wNW58I%2fAAAAAAAAD7U%2f4Yb1hwZQQVY%2fs1600%2fDescargar%2bPack%2bEspectaculares%2bfondos%2bde%2bpantalla%2bnaturales%2b(286).jpg&ehk=2K2mk%2bUH%2f%2fQe9qyghIWHb%2b59Lk9UhLn8H0xFdUFgUzw%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#types-images {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 10px;
+}
+
+
+#info {
+    display: block;
+    background-color: #aeb1b6;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 1.25em;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: #2849A2;
+    color: white;
+    margin: auto;
+}
+
+.cont-comments {
+    text-align: center;
+    background-color: #aeb1b6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#comments-text {
+    padding: 5px 5px;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    width: 900px;
+    height: 100px;
+}
+
+#my-name {
+    padding: 5px 5px;
+    font-size: 1.25em;
+    width: 450px;
+}
+
+#comments-list {
+    font-size: 1.25em;
+    text-align: left;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 40px 0px 40px;
 }

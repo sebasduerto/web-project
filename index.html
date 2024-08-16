@@ -1,97 +1,115 @@
-<!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Migracode</title>
-  <link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In the deep</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Los tiburones</title>
-   
-  </head>
-  
-  <body>
-    <div id="titulo">
-    <h1>LOS TIBURONES</h1>
-  </div>
-    <div id="tiburon">
-      
-      <img id="tibu" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSug85wGlvJVdS4_XNZM5CuN5WahB0JMzW5bmu1Gn2Z1Xqk0SNz">
-       
-      <p class="enlac"><a href="#info">¿Qué son los tiburones?</a>
-      </p>
-     
-      <p class="enlac"><a href="#importancia">Importancia de los tiburones</a>
-      </p>
-      
-      <p class="enlac"><a href="#caracteristicas">Caracteristicas de los tiburones</a>
-      </p>
-      
-      <p class="enlac"><a href="#alimentacion">Alimentacion de los tiburones</a>
-      </p>
-      
-      <p class="enlac"><a href="#tipos">Tipos de tiburones</a>
-      </p>
-      
-    </div>
+    <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">IN THE DEEP</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#importance" class="nav-link">IMPORTANCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#types" class="nav-link">TYPES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#characteristics" class="nav-link">CHARACTERISTICS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#power-supply" class="nav-link">POWER SUPPLY</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+    </header>
+    <section id="hero">
+        <h1>FEARED BY MANKIND,<br>DUE TO ITS ROLE<br>AS A FEROCIUS MARINE PREDATOR</h1>
+        <p>Sharks are a group of cartilaginous fishes (i.e., without a bony skeleton) popularly known as sharks and<br>scientifically known as selachimorphs or selachimorphs (i.e., belonging to the superorder Selachimorpha).</p>
+    </section>
+    <section id="importance">
+        <div class="container">
+            <h2>IMPORTANCE</h2>
+            <p>As top predators, sharks help maintain healthy marine ecosystems, including seagrass beds and coral reefs. Without predators, there is the potential for predation and competition for other species that ultimately affects species richness and abundance within an ecosystem.</p>
+            <p>The removal of sharks can have cascading effects throughout the ecosystems they inhabit, resulting in devastating economic and ecological consequences. Protecting sharks and allowing their populations to replenish is essential to restoring the health of the oceans.</p>
+        </div>
+    </section>
+    <section id="types">
+        <div class="container">
+            <h2>TYPES</h2>
+            <div id="images-t">
+                <img id="types-images" src="" />
+            </div>
+            <div id="info">
+                <div>
+                    <h3 id="types-title"></h3>
+                </div>
+                <div>
+                    <p id="types-text"></p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <button id="previous">Previous</button>
+                <button id="next">Next</button>
+            </div>
+        </div>
+    </section>
+    <section id="characteristics">
+        <div class="container">
+            <h2>CHARACTERISTICS</h2>
+            <ul id="charac">
+                <li>They commonly occupy the role of predators in their various habitats.</li>
+                <li>They are usually torpedo-shaped, with a powerful tail at the end and a set of three major fins: dorsal (on the animal's back), and two pectoral fins (on the animal's chest). In addition, it has three smaller fins: pelvic, anal and a second dorsal fin.</li>
+                <li>Their bodies are composed of cartilage, except for their powerful jaws, which are filled with serrated triangular teeth. The mouth is under the snout, arched and half-open all the time, and the eyes are one on each side of the skull.</li>
+                <li>They can be huge like the whale shark (18 meters long) or small like the pygmy shark (which fits in a human hand).</li>
+                <li>They breathe through five to seven pairs of gills, located on the sides of the head. To do so, they must be in continuous movement, so that water penetrates through their mouths. Likewise, lacking a swim bladder, they must swim constantly or sink to the bottom of the sea.</li>
+                <li>Their skin is usually rough, strong, made up of scales and designed to muffle the animal's movements, reducing friction with the water.</li>
+                <li>The longevity of sharks does not exceed 30 years in most species, although some few can reach a hundred, thanks to the shark's formidable immune system, which is subject to study by scientists.</li>
+            </ul>
+        </div>
+    </section>
+        <div class="container">
+            <section id="power-supply">
+                <h2>POWER SUPPLY</h2>
+                <p>Sharks are mostly predators, so their diet is generally carnivorous, covering a very wide range of marine species: fish, marine mammals, mollusks, marine arthropods or even other sharks. It all depends on the size and habitat of the shark. They may also resort to eating carrion, depending on the case.</p>
+                <p>However, three species of sharks (whale shark, basking shark, and porbeagle) feed instead through a water filtering mechanism, ingesting phytoplankton, nekton, algae and krill, as well as larvae, small crustaceans, squid or even small fish such as anchovies, sardines or certain types of tuna, thanks to specialized structures in their own gills.</p>
+            </section>
+        </div>
+    <section id="comments">
+        <div class="container">
+            <div class="cont-comments">
+                <h3>Comments</h3>
+                <div class="add-comments">
+                    <div>
+                        <label for="my-name">
+                            <h4>Name</h4>
+                            <input type="text" name="my-name" id="my-name" placeholder="Enter your name" required/>
+                        </label>
+                </div>
+                <div>
+                    <label for="comments-text">
+                    <h4>Description</h4>
+                    </label>
+                    <textarea name="comments-text" id="comments-text" placeholder="Enter your comment" required></textarea>
+                </div>
+                <div style="text-align: center;">
+                <button id="add">Send</button>
+                </div>
+                <div>
+                    <ul id="comments-list"></ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <div id="texto">
-    <h2 id="info">¿Qué son los tiburones?</h2>
-    
-    <p>Los tiburones <strong>son un conjunto de peces cartilaginosos</strong> (o sea, sin esqueleto óseo) conocidos popularmente como jaquetones o escualos y científicamente como <em>selaquimorfos</em> o <em>selacimorfos</em> (o sea, pertenecientes al superorden <em>Selachimorfa</em>). Se trata de uno de los animales marinos más populares y <strong>temidos por la humanidad, debido a su rol de feroz depredador marino.</strong></p>
-    
-    <h2 id="importancia">Importancia de los tiburones</h2>
-    
-    <p>Como principales depredadores, los tiburones ayudan a mantener los ecosistemas marinos saludables, incluyendo praderas de yerbas marinas y arrecifes de coral. Sin depredadores, existe el potencial de depredación y competencia por otras especies que, en última instancia, afecta la riqueza de especies y abundancia dentro de un ecosistema.</p>
-    
-    <p>La eliminación de los tiburones puede tener efectos en cascada a lo largo de los ecosistemas que habitan, resultando en consecuencias económicas y ecológicas devastadoras. Proteger los tiburones y permitirle a sus poblaciones que se repongan es esencial para restaurar la salud de los océanos.</p>
-    
-    <h2 id="caracteristicas">Caracteristicas de los tiburones</h2>
-    
-    <ul>
-      <li>Ocupan comúnmente el rol de <strong>depredadores en sus diversos hábitats</strong>.</li>
-      <li><strong>Suelen tener forma de torpedo</strong>, con una potente cola al final y un conjunto de tres aletas mayores: dorsal (en el lomo del animal), y dos pectorales (en el pecho del animal). Además, tiene otras tres aletas de menor tamaño: pelviana, anal y una segunda aleta dorsal.
-      </li>
-      <li><strong>Sus cuerpos están compuestos de cartílago, con excepción de sus poderosas quijadas</strong>, llenas de dientes triangulares aserrados. La boca se halla bajo el hocico, en forma de arco y semiabierta todo el tiempo, y los ojos están uno a cada costado del cráneo.
-      </li>
-      <li><strong>Pueden ser inmensos</strong> como el tiburón ballena (18 metros de longitud) <strong>o pequeños</strong> como el tiburón pigmeo (que cabe en una mano humana).
-      </li>
-      <li><strong>Respiran a través de cinco a siete pares de branquias</strong>, ubicadas a los lados de la cabeza. Para hacerlo deben estar en continuo movimiento, para que el agua penetre por sus bocas. Del mismo modo, al carecer de vejiga natatoria, deben nadar constantemente o hundirse hasta el fondo de los mares.
-      </li>
-      <li><strong>Su piel suele ser áspera, fuerte, conformada por escamas</strong> y diseñada para silenciar los movimientos del animal, disminuyendo la fricción con el agua.
-      </li>
-      <li><strong>La longevidad de los tiburones no supera los 30 años</strong> en la mayoría de las especies, aunque algunas pocas pueden llegar al centenar, gracias al formidable sistema inmunológico del tiburón, que es sujeto a estudio por parte de los científicos.
-      </li>
-    </ul>
-    
-    <h2 id="alimentacion">Alimentacion de los tiburones</h2>
-      
-      <p>Los tiburones son mayormente depredadores, por lo que su dieta es generalmente carnívora, abarcando un rango muy amplio de especies marinas: peces, mamíferos marinos, moluscos, artrópodos marinos o incluso otros tiburones. Todo depende del tamaño y el hábitat del tiburón. También pueden recurrir a la ingesta de carroña, dependiendo del caso.</p>
-      
-      <p>Sin embargo, tres especies de tiburones (tiburón ballena, peregrino y boquiancho) se alimentan en cambio a través de un mecanismo de filtrado del agua, ingiriendo fitoplancton, necton, algas y krill, así como larvas, pequeños crustáceos, calamares o incluso peces pequeños como la anchoa, la sardina o ciertos tipos de atún, gracias a estructuras especializadas de sus propias branquias.</p>
-    
-    <h2 id="tipos">Tipos de tiburones</h2>
-    
-    <ul>
-      <li><strong>Hexanquiformes.</strong> En este orden hay seis especies vivas agrupadas en tres familias, caracterizadas por poseer seis branquias, una sola aleta dorsal y carecer de tercer párpado. Se trata del orden más primitivo de tiburones existentes, tales como el tiburón anguila (<em>Chlamydoselachus anguineus</em>) o el tiburón vaca (<em>Notorynchus cepedianus</em>).</li>
-      <li><strong>Squaliformes.</strong> En este orden hay 125 especies vivas, en siete familias diferentes, que carecen también de tercer párpado y además de aleta anal, pero tienen dos aletas dorsales, algunas de las cuales pueden ser venenosas. Pertenecen a este orden el tiburón pigmeo (<em>Euprotomicrus bispinatus</em>) y el cerdo de mar (<em>Oxynotus centrina</em>).</li>
-      <li><strong>Pristiophoriformes.</strong> De ellos existen ocho especies en dos géneros distintos, dotadas de seis branquias y de un morro alargado y dentado que se asemeja a un serrucho, con el cual remover el fondo oceánico en busca de sus presas. El más representativo del orden es el tiburón sierra (<em>Pilotrema warreni</em>).</li>
-      <li><strong>Squatiniformes.</strong> Abarcando veintidós especies distintas en un mismo género, se trata de tiburones de forma aplastada, adaptados a recorrer el lecho marino, detectando allí a sus presas enterradas en la arena. Un buen ejemplo de ello es el tiburón ángel (<em>Squatina dumeril</em>).</li>
-      <li><strong>Heterodontiformes.</strong> En este caso hay nueve especies de morro corto, cinco branquias y espinas dentro de sus aletas dorsales, ya que están acostumbrados, como el suño cornudo (<em>Heterodontus francisci</em>) a la vida nocturna y en arrecifes.</li>
-      <li><strong>Orectolobiformes.</strong> Compuesto por 33 especies en siete familias distintas, carecen de aleta anal y presentan diversos tipos de bigotes conectados a sus órganos olfativos (narinas). Son ejemplos de este orden el cazón (<em>Ginglymostoma cirratum</em>) y el inmenso tiburón ballena (<em>Rhincodon typus</em>).</li>
-      <li><strong>Carcharhiniformes.</strong> Compuesto por 197 especies en ocho familias distintas, es el grupo más complejo de tiburones, poseen cinco branquias y hocicos anchos y redondeados, a veces con formas particulares, como el tiburón martillo (<em>Sphyrna mokarran</em>), el tiburón toro (<em>Carcharhinus leucas</em>) o el tiburón azul (<em>Prionace glauca</em>).</li>
-      <li><strong>Lamniformes.</strong> En este orden hay 16 especies agrupadas en siete familias, y son los clásicos tiburones del cine, aquellos que poseen grandes dentaduras naciendo bajo los ojos, cinco branquias y el set completo de aletas. Aquí hallamos al gran tiburón blanco (<em>Carcharodon carcharias</em>), al tiburón mako (<em>Isurus oxyrinchus</em>) o al tiburón peregrino (<em>Cetorhinus maximus</em>).</li>
-    </ul>
-    </div>
-<button id="button"><a href="https://concepto.de/tiburones/#:~:text=Los%20tiburones%20se%20alimentan%20de,marinos%20o%20incluso%20otros%20tiburones.">Mas informacion acerca de los tiburones<a/></button>
-  </body>
-</html>
-<!-- partial -->
-  
 </body>
+<script src="index.js"></script>
 </html>
